@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+           Login
+        </title>
+        {% load bootstrap4 %}
+         {% bootstrap_css %}
+    </head>
+    <form method="POST" action="">
+        {% csrf_token%}
+        <body style="background-size: cover; text-align: center" background="https://pixelzila.com/wp-content/uploads/2019/06/wallpaper-links.jpg">
+            <div align="center ">
+                <a href="{% url 'Usuario:Usuario'%}"><img src="https://1.bp.blogspot.com/-AxsFcsJJTQI/XnxGaqqvBlI/AAAAAAAAAjA/K2rhG98tu2sXdwid1-GTpVLRmMPOEJQFQCLcBGAsYHQ/s1600/datosPersonales.png" height="55" style="margin-top: 31%; margin-left: 5%;" ></a>
+                <a href="{% url 'Login:Login'%}"><img src="https://1.bp.blogspot.com/-9VJjT7fwXsw/XnxGakdApBI/AAAAAAAAAi8/JiTOjLT4wDUJfmvZjp3a8ocvUylDQ8I4ACLcBGAsYHQ/s1600/cerrarSesion.png" height="55" style="margin-top: 31%; margin-left: 5%;"></a>
+            </div>
+        </body>
+        {% bootstrap_javascript jquery='full' %}
+    </form>
+    
+</html>
